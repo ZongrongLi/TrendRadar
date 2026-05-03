@@ -3,9 +3,9 @@ name: Get Hot News
 on:
   schedule:
     # 临时调度验证：只为验证 scheduled workflow 能否自动触发。
-    # 当前设置为下一次 UTC 整点；验证完成后立即回滚。
+    # 临时设置为每 5 分钟一次；验证完成后立即回滚。
     #
-    - cron: "0 12 * * *"
+    - cron: "*/5 * * * *"
 
   workflow_dispatch:
 
